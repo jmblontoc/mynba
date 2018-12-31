@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios"
+  },
+  "dependencies": {
+    "moment": "^2.23.0",
+    "react": "16.5.0",
+    "react-native": "~0.57.8",
+    "react-navigation": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^5.0.0"
+  },
+  "private": true
+}
