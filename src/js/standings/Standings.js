@@ -21,6 +21,7 @@ class Standings extends React.Component {
     // update this incase the API changes endpoints
     teamsEndpoint = 'http://data.nba.net/prod/v2/YEAR/teams.json';
     currYear = moment().format('YYYY');
+    currYear = '2018';
     teamsEndpoint = this.teamsEndpoint.replace('YEAR', this.currYear);
 
     componentDidMount() {
