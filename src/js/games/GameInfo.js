@@ -12,6 +12,18 @@ class GameInfo extends React.Component {
         this.currDate = moment().subtract('1', 'days').format("YYYYMMDD");
     }
 
+    gameStatus = () => {
+
+        let clock = this.data.clock;
+        let period = this.data.period.current;
+
+        if (clock === "" && period >= 4) {
+            return "FINAL";
+        }
+
+        return period > 4 ? "Q" + period + " " + clock : period - 1 + "OT" + " " + clock; 
+    }
+
     render() {
 
         const vTriCode = this.data.vTeam.triCode;
@@ -38,6 +50,7 @@ class GameInfo extends React.Component {
                 </View>
                 <View style={[styles.subcontainer, styles.middle]}>
                     <Text>@</Text>
+                    <Text style={{color: 'green'}}>{this.gameStatus()}</Text>
                 </View>
                 <View style={[styles.subcontainer]}>
                     <Image 
