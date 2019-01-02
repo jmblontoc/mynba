@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.1.4"
-    timestamp="1546261151041"
+    timestamp="1546446624796"
     token="-7450449872079782780"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -24,13 +24,16 @@
         duration="0" />
 
     <artifact
-        location="C:\Users\jmlon\passion-projects\main\nba-beta\android\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-        type="SPLIT" />
+        location="C:\Users\jmlon\passion-projects\main\nba-beta\android\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1546260789031"
+        timestamp="1546446005502"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\jmlon\passion-projects\main\nba-beta\android\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\jmlon\passion-projects\main\nba-beta\android\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
@@ -67,25 +70,14 @@
         <artifact
             location="C:\Users\jmlon\passion-projects\main\nba-beta\android\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\jmlon\passion-projects\main\nba-beta\android\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1546260876306"
+        timestamp="1546446624796"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\jmlon\passion-projects\main\nba-beta\android\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1546261151041"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\jmlon\passion-projects\main\nba-beta\android\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
     </build>
 
 </instant-run>

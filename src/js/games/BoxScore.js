@@ -40,7 +40,7 @@ class BoxScore extends React.Component {
                         hTeam: data.stats.hTeam
                     })
                 })
-                .catch(error => alert('something went wrong'));
+                .catch(error => alert('Game has not yet started'));
         }
     }
 

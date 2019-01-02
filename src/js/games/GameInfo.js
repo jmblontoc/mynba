@@ -16,9 +16,14 @@ class GameInfo extends React.Component {
 
         let clock = this.data.clock;
         let period = this.data.period.current;
+        let date = this.data.startTimeUTC;
 
         if (clock === "" && period >= 4) {
             return "FINAL";
+        }
+
+        if (period === 0) {
+            return moment(date).format("LT");
         }
 
         return period > 4 ? "Q" + period + " " + clock : period - 1 + "OT" + " " + clock; 
